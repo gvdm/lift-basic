@@ -25,9 +25,10 @@ class Boot {
       // /static path to be visible
       Menu(Loc("Static", Link(List("static"), true, "/static/index"),
              "Static Content")))
+
     LiftRules.setSiteMapFunc(() => sitemap)
 
-    JQueryModule.InitParam.JQuery = JQueryModule.JQuery211
+    JQueryModule.InitParam.JQuery = JQueryModule.JQuery214
     JQueryModule.init()
 
     //Show the spinny image when an Ajax call starts
